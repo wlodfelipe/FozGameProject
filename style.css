@@ -54,3 +54,12 @@ header {
     border-radius: 50px;
     color: #fff;
 }
+
+.logo button{
+    background: none;
+    border: none;
+}
+
+.logo:hover{
+    background-color: aquamarine;
+}
