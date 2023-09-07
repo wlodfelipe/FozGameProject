@@ -28,6 +28,14 @@ form.addEventListener('submit', function (e) {
     return;
   }
 
+  // validação checkbox
+ 
+  if (document.getElementById("TermosDeUso").checked == false)
+  {
+    alert('Por favor, leia e aceite os termos para continuar sua inscrição');
+    return
+  }
+
   // Se a validação for bem-sucedida, você pode prosseguir com o envio do formulário aqui
   // Por exemplo, você pode usar AJAX para enviar os dados do formulário para o servidor
   // ou executar outras ações necessárias.
