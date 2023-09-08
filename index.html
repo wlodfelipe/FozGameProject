@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Landing Page Untitled Foz Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" type="imagex/png" href="./assets/favicon.ico"><!--Icone da barra de endereço-->
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="#"><img src="assets/quatisemfundo.png" alt="Logo"></a><!--Icone do cabeçario-->
-        </div>
         <div class="container__menu">
+            <div class="logo">
+                <img src="assets/quatisemfundo.png" alt="Logo"></a><!--Icone do cabeçario-->
+            </div>
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">O jogo</a></li>
@@ -23,22 +24,25 @@
                     <li><a href="personagens.html">Personagens</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
-                <div class="containerTranslate">
-                    <div class="selectedLanguage">
-                        Português
+                <div class="language-selector">
+                    <div class="language-selector">
+                        <div class="dropdown">
+                            <div class="language-selector">
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                            <img src="assets/SVG/BRAZIL.svg" alt="Brasil" width="30" height="20">
+                                            <img src="assets/SVG/USA.svg" alt="Estados Unidos" width="30" height="20">
+                                            <img src="assets/SVG/PARAGUAY.svg" alt="Paraguay" width="30" height="20">
+                                    </div>
+                                </div>
+                            </div>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <a href="#" class="br">Português</a>
-                        </li>
-                        <li>
-                            <a href="#" class="sp">Espanõl</a>
-                        </li>
-                        <li>
-                            <a href="#" class="en">English</a>
-                        </li>
-                    </ul>
                 </div>
+                
             </nav>
         </div>
     </header>
@@ -101,6 +105,7 @@
             <p>&copy; 2023 Untitled Foz Game. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="translate.js"></script>
 </body>
 
 </html>
