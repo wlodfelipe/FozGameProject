@@ -1,96 +1,126 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-header {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    background-color: #333; /* Añade un color de fondo al encabezado */
-    padding-top: 5px;
-    padding-bottom: 5px;
+* {
+    box-sizing: border-box;
 }
 
-.container__menu {
-    max-width: 1300px;
-    height: 100%;
-    margin: auto;
+header {
+    background-color: #333;
+    height: 110px;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 80 px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+nav {
+    width: 960px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px; /* Agrega espaciado interno */
-}
-.logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 80 px;
-    height: 80 px;
-    padding: 0 10 0 10px;
-    
-}
-
-
-.menu{
-    display:flex ;/*Alineación horizontal*/
-    flex-direction: row;
-    text-align: center ;
-    align-items: center;
-}
-
-
-.menu ul {
-    display: flex;
-    list-style: none;
-}
-
-.menu ul li {
-    margin-left: 20px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-.menu ul li a:hover {
-    color: #F6615D;
 }
 
 .containerTranslate {
-	position: relative;
-	display: inline-block;
+    margin-top: 25px;
+    position: relative;
 }
 
-.dropdown-content {
-	display: none;
-	position: absolute;
-	z-index: 1;
+.selectedLanguage {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    width: 100px;
 }
 
-.containerTranslate:hover .dropdown-content {
-	display: block;
+.selectedLanguage::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://flagsapi.com/BR/flat/32.png);
 }
 
-.container_description{
+.containerTranslate ul {
+    margin 0;
+    padding 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.containerTranslate ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerTranslate ul li a {
+    width: 140px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.containerTranslate ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.containerTranslate ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+.sp:before {
+    background-image: url(https://flagsapi.com/PY/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://flagsapi.com/US/flat/32.png);
+}
+
+.br:before {
+    background-image: url(https://flagsapi.com/BR/flat/32.png);
+}
+
+.containerTranslate:hover ul {
+    display: block;
+}
+
+.container_description {
     padding-top: 250px;
     display: flex;
     flex-direction: column;
 }
-.sliderimage{
+
+.sliderimage {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
 
-.footertext{
+.footertext {
     font-size: 12 rem;
 }
-.menutext_footer{}
