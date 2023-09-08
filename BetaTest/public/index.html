@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INSCREVA-SE</title>
 </head>
 
 <body>
-    <button id="inscreverBtn">Inscreva-se para a Beta</button>
-
-    <div id="formulario" style="display: none;">
+        INSCREVA-SE PARA A BETA AQUI:
         <form action="/inscrever" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
-
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
-            <br>
-            <input
-            type="checkbox"
-            id="TermosDeUso"
-            name="aceito"
-            value="termos" />            
-            <label for="TermosDeUso"> Li e concordo com os <a href="https://diegocastro.adv.br/modelo-de-termos-de-uso-para-blogs-e-sites/">termos de uso</a>        </label>
-
-            <button type="submit">Enviar</button>
-            <br>Ps: Nunca vamos mandar spam para seu e-mail!!
+            
+            <br>Ps: Nunca vamos mandar spam para seu e-mail!!!
+            <div>
+                <input type="checkbox" id="TermosDeUso" name="aceito" required>
+                <label for="TermosDeUso"> Li e concordo com os <a href="https://diegocastro.adv.br/modelo-de-termos-de-uso-para-blogs-e-sites/"target="_blank">termos de uso</a>.</label>
+            </div>
+                <button type="submit">Concluir</button>
         </form>
-    </div>
-
     <script src="script.js"></script>
 </body>
 
